@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    Select the configuration:
+    <hlayout>
+        <nodom>
+            <groupbox title="Option" closable="false">
+                <radiogroup orient="vertical">
+                    <radio label="Option 1" checked="@bind(fields.option1)"/>
+                    <radio label="Option 2" checked="@bind(fields.option2)" />
+                    <radio label="Option 3" checked="@bind(fields.option3)" />
+                    <radio label="Option 4" checked="@bind(fields.option4)" />
+                    <radio label="Option 5" checked="@bind(fields.option5)" />
+                </radiogroup>
+            </groupbox>
+            <groupbox title="Module" closable="false">
+                <vlayout>
+                    <checkbox label="Module A" checked="@bind(fields.moduleA)" />
+                    <checkbox label="Module B" checked="@bind(fields.moduleB)" />
+                    <checkbox label="Module C" checked="@bind(fields.moduleC)" />
+                    <checkbox label="Module D" checked="@bind(fields.moduleD)" />
+                </vlayout>
+            </groupbox>
+        </nodom>
+        <nodom>
+            <groupbox title="User Info">
+                <vlayout>
+                    <cell>User name: <textbox value="@bind(fields.user)"/></cell>
+                    <cell>Organization name: <textbox value="@bind(fields.org)"/></cell>
+                </vlayout>
+            </groupbox>
+        </nodom>
+    </hlayout>
+</zk>

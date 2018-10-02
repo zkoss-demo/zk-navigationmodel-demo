@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns:n="native">
+    <n:h1>Welcome to the Killer App Setup Wizard</n:h1>
+
+    The Setup Wizard will install Killer App on your computer.
+    Click Next to continue or Cancel to exit the Setup Wizard.
+</zk>

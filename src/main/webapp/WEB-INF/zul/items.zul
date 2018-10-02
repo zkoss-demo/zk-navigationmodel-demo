@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    Select the features you want to install.
+    <radiogroup orient="vertical">
+        <vlayout>
+            <radio label="Minimal" checked="@bind(fields.items_minimal)" />
+            Install only the core module.
+            <radio label="Full" checked="@bind(fields.items_full)" />
+            Install all modules.
+        </vlayout>
+    </radiogroup>
+</zk>

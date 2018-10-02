@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    Ready to Install:
+
+    <label multiline="true">
+        Click Install to begin the installation.
+        Click Back to review or change any of your installation settings.
+        Click Cancel to exit the wizard.
+    </label>
+</zk>

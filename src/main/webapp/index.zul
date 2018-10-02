@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <panel title="Installation wizard"
+           height="480px" width="640px"
+           border="normal" closable="true" minimizable="true" maximizable="false"
+           viewModel="@id('vm') @init('zk.example.InstallerVM')">
+        <panelchildren>
+            <navigation level="@load(vm.navLevel)"
+                        templateURI="@load(self.level.current.templateUri)"
+                        fields="@load(vm.fields)"/>
+        </panelchildren>
+        <toolbar align="end" vflex="min">
+            <if test="@load(not vm.last)">
+                <button label="Back" onClick="@command('back')" disabled="@load(vm.first)" />
+                <button label="@load(vm.navLevel.current.nextLabel)" onClick="@command('next')" />
+            </if>
+            <if test="@load(vm.last)">
+                <button label="@load(vm.navLevel.current.nextLabel)" onClick="@command('finish')" />
+            </if>
+            <space />
+            <button label="Cancel" onClick="@command('cancel')" disabled="@load(vm.last)" />
+        </toolbar>
+    </panel>
+</zk>
