@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zk>
     Please read the End-User License Agreement carefully:
-    <hlayout onCreate='currentLevel.child.navigateTo("01")'>
-        <a label="EULA 1" onClick='currentLevel.child.navigateTo("01")'/>
-        <a label="EULA 2" onClick='currentLevel.child.navigateTo("02")'/>
+    <hlayout onCreate='level.child.navigateTo("01")'>
+        <a label="EULA 1" onClick='level.child.navigateTo("01")'/>
+        <a label="EULA 2" onClick='level.child.navigateTo("02")'/>
     </hlayout>
 
-    <navigation level="@load(currentLevel.child)" templateURI="@load(self.level.current.templateUri)" />
+    <apply level2="@load(level.child)" templateURI="@load(level2.current.templateUri)" />
 
     <div vflex="min">
         <checkbox label="I accept the terms in the License Agreement" checked="@bind(fields.eula)"  />

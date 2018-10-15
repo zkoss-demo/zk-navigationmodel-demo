@@ -5,8 +5,8 @@
            border="normal" closable="true" minimizable="true" maximizable="false"
            viewModel="@id('vm') @init('zk.example.InstallerVM')">
         <panelchildren>
-            <navigation level="@load(vm.navLevel)"
-                        templateURI="@load(self.level.current.templateUri)"
+            <apply level="@load(vm.navLevel)"
+                        templateURI="@load(level.current.templateUri)"
                         fields="@load(vm.fields)"/>
         </panelchildren>
         <toolbar align="end" vflex="min">

@@ -58,7 +58,7 @@ public class InstallerVM {
 	}
 
 	public NavigationLevel<Step> getNavLevel() {
-		return navModel.getChild();
+		return navModel.getRoot();
 	}
 
 	public Map<String, Object> getFields() {
