@@ -5,8 +5,7 @@
 	<artifactId>navigationmodel-demo</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<properties>
-		<zk.version>8.6.0.FL.20181012-Eval</zk.version>
-		<commons-io>1.3.1</commons-io>
+		<zk.version>8.6.0.2-Eval</zk.version>
 		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
 		<packname>-${project.version}-FL-${maven.build.timestamp}</packname>
 	</properties>
@@ -16,7 +15,7 @@
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
@@ -24,19 +23,19 @@
 		<repository>
 			<id>ZK CE</id>
 			<name>ZK CE Repository</name>
-			<url>http://mavensync.zkoss.org/maven2</url>
+			<url>https://mavensync.zkoss.org/maven2</url>
 		</repository>
 		<repository>
 			<id>ZK EVAL</id>
       		<name>ZK Evaluation Repository</name>
-			<url>http://mavensync.zkoss.org/eval</url>
+			<url>https://mavensync.zkoss.org/eval</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>zkmaven</id>
 			<name>ZK Maven Plugin Repository</name>
-			<url>http://mavensync.zkoss.org/maven2/</url>
+			<url>https://mavensync.zkoss.org/maven2/</url>
 		</pluginRepository>
 	</pluginRepositories>
 	<dependencies>
@@ -54,11 +53,6 @@
 			<groupId>org.zkoss.zk</groupId>
 			<artifactId>zhtml</artifactId>
 			<version>${zk.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>${commons-io}</version>
 		</dependency>
 	</dependencies>
 	<build>
